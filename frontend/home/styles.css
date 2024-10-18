@@ -1,0 +1,115 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0.5em 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    padding: 2em;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+/* Lesson Cards */
+.lessons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    flex-wrap: wrap; /* Wraps the cards on smaller screens */
+}
+
+.lesson-card {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 20%;
+    margin-bottom: 1em;
+}
+
+.lesson-card h2 {
+    margin: 0;
+}
+
+/* Leaderboard Preview */
+.leaderboard-preview {
+    background-color: #eee;
+    padding: 1em;
+    text-align: center;
+}
+
+.leaderboard-preview ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Profile Summary */
+.profile-summary {
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stacks the menu items vertically */
+        align-items: center;
+    }
+
+    .lessons {
+        flex-direction: column; /* Stacks the lesson cards vertically */
+        align-items: center;
+    }
+
+    .lesson-card {
+        width: 80%; /* Expands lesson cards to a larger size on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .lesson-card {
+        width: 100%; /* Expands lesson cards fully on very small screens */
+    }
+
+    .intro-section {
+        padding: 1em; /* Reduces padding for smaller screens */
+    }
+}

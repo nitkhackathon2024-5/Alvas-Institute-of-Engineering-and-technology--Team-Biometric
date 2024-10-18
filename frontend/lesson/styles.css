@@ -1,0 +1,53 @@
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1em;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0.5em 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Lessons List */
+.lessons-list {
+    background-color: white;
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lessons-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lessons-list ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}

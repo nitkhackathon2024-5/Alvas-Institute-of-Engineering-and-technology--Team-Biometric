@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Subtracting navbar height */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 1em;
+    position: fixed; /* Fixes navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0.5em 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+h2 {
+    margin: 15px 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.title {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.profile-card p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+}

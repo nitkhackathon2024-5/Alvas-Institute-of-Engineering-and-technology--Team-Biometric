@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>sign up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="centering">
+            <form class="my-form">
+                <div class="login-welcome-row">
+                    
+                    <!-- optimize the image in production -->
+                    <h1>Register!</h1>
+                </div>
+                <div class="text-field">
+                    <label for="email">Email:</label>
+                    <input
+                        aria-label="Email"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                    >
+                   
+                </div>
+                <div class="text-field">
+                    <label for="password">Password:</label>
+                    <input
+                        id="password"
+                        type="password"
+                        aria-label="Password"
+                        name="password"
+                        placeholder="Your Password"
+                        title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+                        
+                    >
+                  
+                    >
+                </div>
+                <div class="text-field">
+                    <label for="password">Username:</label>
+                    <input
+                        id="username"
+                        type="text"
+                        aria-label="Password"
+                        name="username"
+                        placeholder="Your username"                     
+                    >
+                 
+                </div>
+                <input type="submit" class="my-form__button" value="sign in" >
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Do you have a account?</span>
+                        <a href="http://127.0.0.1:5501/login/index.html" title="Reset Password">sign in</a>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
+

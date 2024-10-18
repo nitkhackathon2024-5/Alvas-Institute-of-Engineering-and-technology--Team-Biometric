@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Add Lessons</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html">Add lessons</a></li>
+      <li><a href="/Admin/quize/index.html">Add quize questions</a></li>
+      <li><a href="/profile">Profile</a></li>
+    </ul>
+  </nav>
+
+  <section class="admin-panel">
+    <h1>Add a New Lesson</h1>
+
+    <form id="lesson-form">
+      <label for="title">Lesson Title:</label>
+      <input type="text" id="title" name="title" required>
+<!-- 
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="budgeting">Budgeting</option>
+        <option value="saving">Saving</option>
+        <option value="credit">Credit</option>
+        <option value="investing">Investing</option>
+      </select> -->
+
+      <label for="content">Lesson Content:</label>
+      <textarea id="content" name="content" required></textarea>
+
+      <!-- <h2>Quiz</h2>
+      <div id="quiz-questions">
+        <div class="quiz-question">
+          <label for="question">Question:</label>
+          <input type="text" name="question" required>
+
+          <label for="options">Options (comma-separated):</label>
+          <input type="text" name="options" required>
+
+          <label for="answer">Correct Answer:</label>
+          <input type="text" name="answer" required>
+        </div>
+      </div> -->
+
+      <!-- <button type="button" id="add-question">Add Another Question</button>
+
+      <label for="simulation-type">Simulation Type (optional):</label>
+      <input type="text" id="simulation-type" name="simulation-type">
+
+      <label for="simulation-data">Simulation Data (JSON):</label>
+      <textarea id="simulation-data" name="simulation-data"></textarea> -->
+
+      <button type="submit">Add Lesson</button>
+    </form>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
